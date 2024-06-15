@@ -25,7 +25,7 @@ function deleteLast() {
 function calculate() {
     try {
         displayValue = displayValue.replace(/\^/g, '**');
-        const result = eval(displayValue); // Using eval() for simplicity, not recommended for production
+        const result = eval(displayValue); 
         document.getElementById('display').innerText = result;
         displayValue = result.toString();
     } catch (error) {
